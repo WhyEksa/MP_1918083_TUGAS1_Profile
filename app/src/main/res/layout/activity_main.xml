@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/photo_profile"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_1"
+            />
+
+        <ImageView
+            android:id="@+id/bottom_photo_profile"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom_profile" />
+
+        <TextView
+            android:id="@+id/nama_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Wahyu Eka Saputra"
+            android:textColor="@color/black_v2"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/nama_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_border"
+            android:text="Follow"
+            android:textColor="@color/black_v2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/about_profile"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@id/btn_follow"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:text="NIM : 1918083\nKELAS : B\nPRODI : Teknik Informatika S-1"
+            android:textAlignment="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_below="@id/about_profile"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/jlh_ft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="186"
+                    android:textSize="20dp"
+                    android:textColor="@color/black_v2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlh_ft"
+                    android:layout_centerHorizontal="true"
+                    android:text="photos"
+                    android:textColor="@color/black_v2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/jlh_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="10,5RB"
+                    android:textSize="20dp"
+                    android:textColor="@color/black_v2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlh_fl"
+                    android:layout_centerHorizontal="true"
+                    android:text="followers"
+                    android:textColor="@color/black_v2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/jlh_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="86"
+                    android:textSize="20dp"
+                    android:textColor="@color/black_v2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlh_fl"
+                    android:layout_centerHorizontal="true"
+                    android:text="following"
+                    android:textColor="@color/black_v2"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
